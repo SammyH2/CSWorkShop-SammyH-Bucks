@@ -1,7 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+
+void Function()
+{
+    Console.WriteLine("Hello World");
+}
+
+void Function2(int num)
+{
+    int sum = num * 10;
+    Console.WriteLine($"{num} * {sum}");
+}
+
+Function();
 
 for (int i = 0; i < 5; i++)
 {
-    Console.WriteLine("Hello, World!");
+    Function2(i+1);
 }
 
